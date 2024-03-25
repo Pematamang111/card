@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
 </head>
 <body>
     <button id="open">click</button>
@@ -13,11 +20,35 @@
         <input type="text" id="title"> <br>
         <label for="email">description</label> <br>
         <textarea name="text" id="text" cols="30" rows="10"></textarea> <br>
+        <label for="date">Due date</label> <br>
+        <input type="date" id="date"> <br>
         <button id="close">close</button>
       </form>
       
     </dialog>
-    <div id="card"></div>
-    <script src="./index.js"></script>
+    <main>
+      <div>
+        <div>
+        <h1>To-Do</h1>
+        <div id="to-do" class="draggable"></div>
+        </div>
+      </div>
+    
+      <div>
+        <div>
+        <h1>Progress</h1>
+        <div id="progress" class="draggable"></div>
+        </div>
+      </div>
+    
+      <div>
+        <div>
+        <h1>Done</h1>
+        <div id="done" class="draggable"></div>
+        </div>
+      </div>
+  </main>
+
+      <script src="./index.js"></script>
 </body>
 </html>
